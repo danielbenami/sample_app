@@ -9,22 +9,22 @@ describe "LayoutLinks" do
     
   it "should have a contact page at '/contact'" do
     get '/contact'
-    response.should have_selector('title', :content="Contact")
+    response.should have_selector('title', :content=>"Contact")
   end
   
   it "should have a about page at '/about'" do
     get '/about'
-    response.should have_selector('title', :content="About")
+    response.should have_selector('title', :content=>"About")
   end
   
   it "should have a Help page at '/help'" do
     get '/help'
-    response.should have_selector('title', :content="Help")
+    response.should have_selector('title', :content=>"Help")
   end
   
   it "should have a Sign Up page at '/signup'" do
     get '/signup'
-    response.should have_selector('title', :content="Sign Up")    
+    response.should have_selector('title', :content=>"Sign Up")    
   end
       
 end
